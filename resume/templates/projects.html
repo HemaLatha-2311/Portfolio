@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content1 %}
+
+
+<div class="projects-container">
+    <ul class="text-light">
+        {% for project in projects %}
+            <div class="project-card">
+                <div class="project-details">
+                    <h2>{{ project.title }}</h2>
+                    <p><strong>Tech Stack:</strong> {{ project.tech_stack }}</p>
+                    <p>{{ project.description }}</p>
+                </div>
+                <img src="{% static project.image %}" alt="{{ project.title }} image" class="project-image">
+            </div>
+        {% endfor %}
+ 
+     </ul>
+</div>
+{% endblock content1 %}

@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content1 %} 
+<div class="row my-5">
+  <div class="col-4 d-flex justify-content-center  align-items-center">
+    <img src="{% static 'images/pic.jpg' %}" alt="pic" class="about_image">
+  </div>
+
+  <div class="col-7 text-left text-light fst-italic lh-sm">
+    <h2> Hello!! </h2>
+    <p class="fs-6 fst-italic lh-sm">
+
+    I'm a passionate and detail-oriented Python Full-Stack Developer with 2 years of hands-on experience in 
+    designing, developing, and deploying dynamic web applications. I specialize in creating 
+    scalable backend systems using Python (Django) and building responsive, user-friendly interfaces 
+    with HTML, CSS, JavaScript.
+    </p>
+
+    <p class="fs-6 fst-italic lh-sm">
+
+    Throughout my career, I've worked on multiple end-to-end projects—from database design and API development to 
+    front-end integration and deployment. I enjoy solving complex problems, writing clean code, and continuously 
+    learning new technologies to deliver high-quality solutions.
+    </p>
+
+
+  </div>
+
+
+</div>
+
+<div class="row my-1">
+  
+  <h2 class="text-center mb-4" style="color: #4fffb0;">My Tech Stack</h2>
+
+
+  <div class="d-flex justify-content-center  align-items-center">  
+
+    <img src="{% static 'images/py.jpg' %}" alt="python logo" width="50" height="60" 
+    class="img-fluid mx-4">
+
+    <img src="{% static 'images/django.png' %}" alt="django logo" width="50" height="60" 
+    class="img-fluid mx-4">
+
+    <img src="{% static 'images/html.jpg' %}" alt="html logo" width="50" height="60" 
+    class="img-fluid mx-4">
+
+    <img src="{% static 'images/css.jpg' %}" alt="css logo" width="50" height="60" 
+    class="img-fluid mx-4">
+
+    <img src="{% static 'images/numpy.jpg' %}" alt="numpy logo" width="50" height="60" 
+    class="img-fluid mx-4">
+
+    <img src="{% static 'images/pandas.png' %}" alt="pandas logo" width="50" height="60" 
+    class="img-fluid mx-4">
+
+    <img src="{% static 'images/mysql.png' %}" alt="mysql logo" width="50" height="60" 
+    class="img-fluid mx-4">
+
+    <img src="{% static 'images/matplotlib.png' %}" alt="python logo" width="50" height="60" 
+    class="img-fluid mx-4">
+
+
+  </div>
+
+</div>
+
+
+
+
+{% endblock content1 %}

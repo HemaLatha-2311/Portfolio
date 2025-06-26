@@ -1,0 +1,154 @@
+body {
+    background-color:  rgb(5, 7, 24);
+    
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active:hover,
+.navbar-brand:hover {
+    font-weight: bold;
+    color: #4fffb0; /* safer alternative to lch() */
+}
+
+.navbar-nav .nav-link:hover {
+    font-size: 20px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.navbar-dark {
+    background-color: rgb(41, 44, 51);
+}
+
+.square-image-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* ✅ Correct class selectors */
+.name {
+    color: rgb(66, 146, 146);
+}
+
+.title {
+    color: #4fffb0;
+}
+
+.social_links{
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_image{
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.jumbotron {
+    background-color: #002244;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.display4{
+    color: #eef3f8;
+    font-size: 24px;
+}
+
+.lead{
+    font-size: 18px;
+    color: #28a745;
+}
+
+.jumbotron img {
+    max-height: 40px;
+    object-fit: contain;
+}
+
+ul {
+    padding-left: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.company-logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 6px;  /* Optional: smooth edges */
+    background-color: transparent;
+    padding: 2px;
+}
+
+.form-container{
+    border: 2px slid black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+
+/* Project Section Styling */
+.project-details h2{
+    color: #ffffff;
+    font-size: 24px;
+    
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    color: #d4d4d4;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.project-details p strong {
+    color: #00ffa6;  /* Match the green/teal used in experience subtitle */
+    font-weight: 600;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #002b40; /* same as experience cards */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.project-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+

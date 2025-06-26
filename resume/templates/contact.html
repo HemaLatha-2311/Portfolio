@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content1 %} 
+
+{% if messages %}
+  {% for message in messages %}
+    <div class="alert alert-success alert-dismissible fade show m-3" role="alert" id="success-alert">
+      {{ message }}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  {% endfor %}
+{% endif %}
+
+
+
+<div class = "row my-2">
+    <div class = "col-4 text-center my-5 text-light">
+        <h1 class = "mt-5"> Stay Connected </h1>
+        <h3 class = "mt-5"> hema1107latha@gmail.com </h3>    
+
+        
+            <div class="col-12 d-flex justify-content-center  align-items-center mt-5">
+                <a href="http://www.linkedin.com/in/hema-2311-latha" target="_blank" class="ms-3"> 
+                <img src="{% static 'images/linkedin.png' %}" alt="images/linkedin.png" width="50" height="50"
+                class="social_links">
+                </a>
+
+                <a href="https://www.instagram.com/_hemu_hema_?igsh=NTJkemN3MnpieGY5" target="_blank" class="ms-3"> 
+                <img src="{% static 'images/insta.jpg' %}" alt="images/insta.jpg" width="50" height="50"
+                class="social_links">
+                </a>
+
+                
+                
+            </div>
+
+
+
+
+
+
+            </div>
+     
+                    <div class = "col-5 offset-1 mt-3">
+
+                        <div class = "container form-container">
+                            <form method="POST" action="">
+                                {% csrf_token %}
+                                <div class="form-group m-3">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" class="form-control" id="name" pattern="[A-Za-z\s]{1,50}" title="Only letters and spaces allowed" required>
+
+                                </div>
+
+                                <div class="form-group m-3">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" class="form-control" id="email" required>
+                                </div>
+
+                                <div class="form-group m-3">
+                                    <label for="phone">Phone No</label>
+                                    <input type="tel" name="phone" class="form-control" id="phone" pattern="[0-9]{10}" required>
+                                </div>
+
+                                <div class="form-group m-3">
+                                    <label for="msg">Message</label>
+                                    <textarea name="message" class="form-control" id="msg" rows="2" required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary m-3">Submit</button>
+                            </form>
+                        </div>
+ 
+                    </div>    
+
+            </div>  
+
+    </div>
+
+
+</div>
+
+
+
+{% endblock content1 %}

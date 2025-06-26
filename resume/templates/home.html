@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content1 %} 
+<div class="row my-5">
+  <div class="col-12 d-flex justify-content-center  align-items-center">
+    <div class="square-image-container">
+        <img class="square-image" src="{% static 'images/pic.jpg' %}" alt="pic">
+    </div>
+  </div> 
+
+<div class="col-12 text-center mt-4">
+    <h4 class="title"> Hi, My name is </h4>
+    <div class="name">
+        <h1> Hemalatha </h1>
+        <h2> I am Python Developer</h2>
+    </div>
+</div>
+
+<div class="col-12 text-center mt-4">
+  <div class="col-12 d-flex justify-content-center  align-items-center">
+    <a href="http://www.linkedin.com/in/hema-2311-latha" target="_blank" class="ms-3"> 
+      <img src="{% static 'images/linkedin.png' %}" alt="images/linkedin.png" width="50" height="50"
+      class="social_links">
+    </a>
+
+    <a href="https://www.instagram.com/_hemu_hema_?igsh=NTJkemN3MnpieGY5" target="_blank" class="ms-3"> 
+      <img src="{% static 'images/insta.jpg' %}" alt="images/insta.jpg" width="50" height="50"
+      class="social_links">
+    </a>
+
+
+  </div>
+
+
+</div>
+ 
+
+
+</div>
+
+
+
+{% endblock content1 %}
