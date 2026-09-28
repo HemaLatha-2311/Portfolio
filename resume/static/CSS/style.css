@@ -159,26 +159,21 @@ ul {
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
 }
 
-/* About page text */
+/* About page */
 .about-text {
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 1.6;
+    color: #ffffff !important;
 }
 
 .about-text h2 {
-    color: #4fffb0;
-    margin-bottom: 15px;
+    color: #4fffb0 !important;
 }
 
 .about-text p {
-    color: #ffffff;
-    margin-bottom: 20px;
+    color: #ffffff !important;
 }
 
-/* About page tech stack */
 .tech-stack-title {
-    color: #4fffb0;
+    color: #4fffb0 !important;
 }
 
 /* Contact page */
