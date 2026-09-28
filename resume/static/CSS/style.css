@@ -159,23 +159,7 @@ ul {
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
 }
 
-/* About page */
-.about-text {
-    color: #ffffff !important;
-}
-
-.about-text h2 {
-    color: #4fffb0 !important;
-}
-
-.about-text p {
-    color: #ffffff !important;
-}
-
-.tech-stack-title {
-    color: #4fffb0 !important;
-}
-
+/
 /* Contact page */
 .contact-info {
     color: #ffffff;
@@ -189,7 +173,23 @@ ul {
     color: #ffffff;
 }
 
+.about-text {
+    color: white !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
 
+.about-text p {
+    color: white !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.about-text h2 {
+    color: #4fffb0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
 
 
 
