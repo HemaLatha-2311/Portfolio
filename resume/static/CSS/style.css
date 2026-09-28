@@ -175,10 +175,13 @@ ul {
 
 
 
-/* About page */
+/* =========================
+   ABOUT PAGE
+   ========================= */
 
 .about-text {
     color: #ffffff !important;
+    background: transparent !important;
     opacity: 1 !important;
     visibility: visible !important;
 }
@@ -189,19 +192,18 @@ ul {
     visibility: visible !important;
 }
 
-.about-paragraph {
+.about-text .about-paragraph {
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
     opacity: 1 !important;
     visibility: visible !important;
     display: block !important;
+    position: relative !important;
+    z-index: 10 !important;
     font-size: 16px;
     font-style: italic;
     line-height: 1.6;
     margin-bottom: 20px;
 }
-
-
-
 
 
