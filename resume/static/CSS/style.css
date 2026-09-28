@@ -103,8 +103,15 @@ ul {
     padding: 2px;
 }
 
-.form-container{
+/*.form-container{
     border: 2px slid black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}*/
+
+.form-container{
+    border: 2px solid black;
     padding: 20px;
     border-radius: 10px;
     background-color: #f0f0f0;
@@ -151,4 +158,45 @@ ul {
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
 }
+
+/* About page text */
+.about-text {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about-text h2 {
+    color: #4fffb0;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* About page tech stack */
+.tech-stack-title {
+    color: #4fffb0;
+}
+
+/* Contact page */
+.contact-info {
+    color: #ffffff;
+}
+
+.contact-info h1 {
+    color: #4fffb0;
+}
+
+.contact-info h3 {
+    color: #ffffff;
+}
+
+
+
+
+
+
 
