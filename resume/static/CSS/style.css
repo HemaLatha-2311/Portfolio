@@ -159,7 +159,7 @@ ul {
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
 }
 
-/
+
 /* Contact page */
 .contact-info {
     color: #ffffff;
@@ -178,24 +178,28 @@ ul {
 /* About page */
 
 .about-text {
-    color: white !important;
-}
-
-.about-text h2 {
-    color: #4fffb0 !important;
-    margin-bottom: 20px;
-}
-
-.about-paragraph {
-    color: white !important;
-    font-size: 16px;
-    font-style: italic;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    color: #ffffff !important;
     opacity: 1 !important;
     visibility: visible !important;
 }
 
+.about-text h2 {
+    color: #4fffb0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.about-paragraph {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
 
 
 
