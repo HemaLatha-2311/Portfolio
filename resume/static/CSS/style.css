@@ -173,23 +173,29 @@ ul {
     color: #ffffff;
 }
 
+
+
+/* About page */
+
 .about-text {
     color: white !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
-.about-text p {
-    color: white !important;
-    opacity: 1 !important;
-    visibility: visible !important;
 }
 
 .about-text h2 {
     color: #4fffb0 !important;
+    margin-bottom: 20px;
+}
+
+.about-paragraph {
+    color: white !important;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 20px;
     opacity: 1 !important;
     visibility: visible !important;
 }
+
 
 
 
