@@ -1,3 +1,4 @@
+```css
 /* =========================
    GENERAL PAGE
    ========================= */
@@ -34,41 +35,122 @@ body {
 
 
 /* =========================
-   PROFILE IMAGE
+   ABOUT PAGE
    ========================= */
 
-.square-image-container {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    margin: 0 auto;
+.about-section {
+    background-color: #1c1f24;
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 40px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
-.square-image {
-    width: 100%;
-    height: 100%;
+
+/* Profile Image */
+
+.about_image {
+    width: 200px;
+    height: 200px;
+
     object-fit: cover;
     object-position: center;
+
     display: block;
+
+    border-radius: 50%;
+    border: 3px solid #4fffb0;
+}
+
+
+/* About Text */
+
+.about-text {
+    background-color: #1c1f24;
+    color: #ffffff;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.about-text h2 {
+    color: #4fffb0;
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+
+.about-text p {
+    color: #ffffff;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
 }
 
 
 /* =========================
-   TEXT / HOME PAGE
+   TECH STACK
    ========================= */
 
-.name {
-    color: rgb(66, 146, 146);
+.tech-stack-section {
+    background-color: #1c1f24;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    margin-bottom: 50px;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
-.title {
+
+.tech-stack-title {
     color: #4fffb0;
+
+    font-size: 28px;
+
+    margin-bottom: 30px;
+}
+
+
+.tech-stack-container {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+
+.tech-stack-container img {
+    width: 60px;
+
+    height: 60px;
+
+    object-fit: contain;
+
+    background-color: #ffffff;
+
+    padding: 5px;
+
+    border-radius: 8px;
 }
 
 
@@ -78,102 +160,108 @@ body {
 
 .social_links {
     overflow: hidden;
+
     border-radius: 50%;
+
     border: 2px solid #ccc;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 }
 
 
 /* =========================
-   ABOUT PAGE
+   HOME PAGE
    ========================= */
 
-.about_image {
+.square-image-container {
     width: 200px;
+
     height: 200px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+
+    overflow: hidden;
+
+    border: 2px solid #ccc;
+
     border-radius: 50%;
-}
 
-.about-text {
-    color: #ffffff;
-}
+    margin: 0 auto;
 
-.about-text h2 {
-    color: #4fffb0;
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.about-text p {
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-
-/* =========================
-   TECH STACK
-   ========================= */
-
-.tech-stack-title {
-    color: #4fffb0;
-    font-size: 28px;
-}
-
-.tech-stack-container {
     display: flex;
+
     justify-content: center;
+
     align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
 }
 
-.tech-stack-container img {
-    width: 50px;
-    height: 60px;
-    object-fit: contain;
+
+.square-image {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+}
+
+
+.name {
+    color: rgb(66, 146, 146);
+}
+
+
+.title {
+    color: #4fffb0;
 }
 
 
 /* =========================
-   JUMBOTRON / EXPERIENCE
+   JUMBOTRON
    ========================= */
 
 .jumbotron {
     background-color: #002244;
+
     padding: 20px;
+
     border-radius: 10px;
 }
 
+
 .display4 {
     color: #eef3f8;
+
     font-size: 24px;
 }
 
+
 .lead {
     font-size: 18px;
+
     color: #28a745;
 }
 
+
 .jumbotron img {
     max-height: 40px;
+
     object-fit: contain;
 }
 
 
 /* =========================
-   LISTS
+   LIST
    ========================= */
 
 ul {
     padding-left: 1.2rem;
+
     margin-top: 0.5rem;
 }
 
@@ -184,10 +272,15 @@ ul {
 
 .company-logo {
     height: 60px;
+
     width: auto;
+
     object-fit: contain;
+
     border-radius: 6px;
+
     background-color: transparent;
+
     padding: 2px;
 }
 
@@ -198,8 +291,11 @@ ul {
 
 .form-container {
     border: 2px solid black;
+
     padding: 20px;
+
     border-radius: 10px;
+
     background-color: #f0f0f0;
 }
 
@@ -210,38 +306,59 @@ ul {
 
 .project-details h2 {
     color: #ffffff;
+
     font-size: 24px;
+
     margin-bottom: 10px;
 }
 
+
 .project-details p {
     color: #d4d4d4;
+
     font-size: 17px;
+
     line-height: 1.6;
+
     margin-bottom: 8px;
 }
 
+
 .project-details p strong {
     color: #00ffa6;
+
     font-weight: 600;
 }
 
+
 .project-card {
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     gap: 30px;
+
     margin: 40px 0;
+
     padding: 20px;
+
     border-radius: 10px;
+
     background-color: #002b40;
+
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+
 .project-image {
     width: 300px;
+
     height: auto;
+
     border-radius: 8px;
+
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
 }
 
@@ -254,9 +371,11 @@ ul {
     color: #ffffff;
 }
 
+
 .contact-info h1 {
     color: #4fffb0;
 }
+
 
 .contact-info h3 {
     color: #ffffff;
@@ -264,39 +383,49 @@ ul {
 
 
 /* =========================
-   MOBILE RESPONSIVE
+   MOBILE
    ========================= */
 
 @media (max-width: 768px) {
 
+    .about-section {
+        padding: 20px;
+
+        margin-top: 25px;
+    }
+
+
     .about_image {
         width: 160px;
+
         height: 160px;
-        margin-bottom: 30px;
+
+        margin-bottom: 25px;
     }
+
 
     .about-text {
         text-align: center;
+
+        padding: 15px;
     }
 
+
     .about-text h2 {
-        font-size: 24px;
+        font-size: 26px;
     }
+
 
     .about-text p {
         font-size: 15px;
+
+        line-height: 1.7;
     }
 
-    .tech-stack-container {
-        gap: 15px;
+
+    .tech-stack-section {
+        padding: 20px;
     }
 
-    .project-card {
-        flex-direction: column;
-    }
-
-    .project-image {
-        width: 100%;
-        max-width: 300px;
-    }
 }
+```
