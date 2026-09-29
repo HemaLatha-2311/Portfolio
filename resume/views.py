@@ -70,25 +70,48 @@ def certification (request):
 
 def contact(request):
     if request.method == "POST":
+
         name = request.POST.get("name")
         email = request.POST.get("email")
         phone = request.POST.get("phone")
         message = request.POST.get("message")
 
         subject = f"New Contact Form Submission from {name}"
-        full_message = f"Name: {name}\nEmail: {email}\nPhone: {phone}\n\nMessage:\n{message}"
 
-        send_mail(
-            subject,
-            full_message,
-            settings.DEFAULT_FROM_EMAIL,
-            [settings.CONTACT_EMAIL],  # 👈 Your email address
-            fail_silently=False,
+        full_message = (
+            f"Name: {name}\n"
+            f"Email: {email}\n"
+            f"Phone: {phone}\n\n"
+            f"Message:\n{message}"
         )
 
-        messages.success(request, "Your message has been sent successfully!")
-        
+        try:
+            send_mail(
+                subject=subject,
+                message=full_message,
+                from_email=settings.DEFAULT_FROM_EMAIL,
+                recipient_list=[settings.CONTACT_EMAIL],
+                fail_silently=False,
+                headers={
+                    "Reply-To": email,
+                },
+            )
+
+            messages.success(
+                request,
+                "Your message has been sent successfully!"
+            )
+
+        except Exception as e:
+            print("EMAIL ERROR:", e)
+
+            messages.error(
+                request,
+                "Sorry, your message could not be sent. Please try again."
+            )
+
     return render(request, "contact.html")
+
 
 
 def resume(request):
