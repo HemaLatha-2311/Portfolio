@@ -176,21 +176,42 @@ ul {
 
 
 /* =========================
-   ABOUT PAGE
+   ABOUT PAGE - FINAL FIX
    ========================= */
 
 .about-text {
-    color: #ffffff !important;
-    background: transparent !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+    color: #ffffff;
+    position: relative;
+    z-index: 10;
 }
 
 .about-text h2 {
-    color: #4fffb0 !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+    color: #4fffb0;
 }
 
+.about-text div {
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 1.6;
+    font-style: normal;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    position: relative;
+    z-index: 10;
+}
 
+.about-text p {
+    color: #ffffff;
+    background: transparent;
+    font-size: 16px;
+    line-height: 1.6;
+    font-style: normal;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    position: relative;
+    z-index: 10;
+}
 
