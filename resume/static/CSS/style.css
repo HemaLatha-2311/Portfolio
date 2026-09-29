@@ -1,26 +1,41 @@
+/* =========================
+   GENERAL PAGE
+   ========================= */
+
 body {
-    background-color:  rgb(5, 7, 24);
-    
+    background-color: rgb(5, 7, 24);
+    color: #ffffff;
+    margin: 0;
 }
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active:hover,
-.navbar-brand:hover {
-    font-weight: bold;
-    color: #4fffb0; /* safer alternative to lch() */
-}
 
-.navbar-nav .nav-link:hover {
-    font-size: 20px;
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navbar-dark {
+    background-color: rgb(41, 44, 51);
 }
 
 .navbar-brand {
     font-size: 25px;
 }
 
-.navbar-dark {
-    background-color: rgb(41, 44, 51);
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active:hover,
+.navbar-brand:hover {
+    font-weight: bold;
+    color: #4fffb0;
 }
+
+.navbar-nav .nav-link:hover {
+    font-size: 20px;
+}
+
+
+/* =========================
+   PROFILE IMAGE
+   ========================= */
 
 .square-image-container {
     width: 200px;
@@ -29,6 +44,7 @@ body {
     border: 2px solid #ccc;
     border-radius: 50%;
     margin: 0 auto;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +58,11 @@ body {
     display: block;
 }
 
-/* ✅ Correct class selectors */
+
+/* =========================
+   TEXT / HOME PAGE
+   ========================= */
+
 .name {
     color: rgb(66, 146, 146);
 }
@@ -51,7 +71,12 @@ body {
     color: #4fffb0;
 }
 
-.social_links{
+
+/* =========================
+   SOCIAL LINKS
+   ========================= */
+
+.social_links {
     overflow: hidden;
     border-radius: 50%;
     border: 2px solid #ccc;
@@ -61,25 +86,78 @@ body {
     align-items: center;
 }
 
-.about_image{
+
+/* =========================
+   ABOUT PAGE
+   ========================= */
+
+.about_image {
     width: 200px;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
     display: block;
+    border-radius: 50%;
 }
+
+.about-text {
+    color: #ffffff;
+}
+
+.about-text h2 {
+    color: #4fffb0;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   TECH STACK
+   ========================= */
+
+.tech-stack-title {
+    color: #4fffb0;
+    font-size: 28px;
+}
+
+.tech-stack-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tech-stack-container img {
+    width: 50px;
+    height: 60px;
+    object-fit: contain;
+}
+
+
+/* =========================
+   JUMBOTRON / EXPERIENCE
+   ========================= */
 
 .jumbotron {
     background-color: #002244;
     padding: 20px;
     border-radius: 10px;
-    
 }
 
-.display4{
+.display4 {
     color: #eef3f8;
     font-size: 24px;
 }
 
-.lead{
+.lead {
     font-size: 18px;
     color: #28a745;
 }
@@ -89,28 +167,36 @@ body {
     object-fit: contain;
 }
 
+
+/* =========================
+   LISTS
+   ========================= */
+
 ul {
     padding-left: 1.2rem;
     margin-top: 0.5rem;
 }
 
+
+/* =========================
+   COMPANY LOGO
+   ========================= */
+
 .company-logo {
     height: 60px;
     width: auto;
     object-fit: contain;
-    border-radius: 6px;  /* Optional: smooth edges */
+    border-radius: 6px;
     background-color: transparent;
     padding: 2px;
 }
 
-/*.form-container{
-    border: 2px slid black;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #f0f0f0;
-}*/
 
-.form-container{
+/* =========================
+   FORM
+   ========================= */
+
+.form-container {
     border: 2px solid black;
     padding: 20px;
     border-radius: 10px;
@@ -118,11 +204,13 @@ ul {
 }
 
 
-/* Project Section Styling */
-.project-details h2{
+/* =========================
+   PROJECT SECTION
+   ========================= */
+
+.project-details h2 {
     color: #ffffff;
     font-size: 24px;
-    
     margin-bottom: 10px;
 }
 
@@ -134,7 +222,7 @@ ul {
 }
 
 .project-details p strong {
-    color: #00ffa6;  /* Match the green/teal used in experience subtitle */
+    color: #00ffa6;
     font-weight: 600;
 }
 
@@ -146,11 +234,9 @@ ul {
     margin: 40px 0;
     padding: 20px;
     border-radius: 10px;
-    background-color: #002b40; /* same as experience cards */
+    background-color: #002b40;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
 }
-
 
 .project-image {
     width: 300px;
@@ -160,7 +246,10 @@ ul {
 }
 
 
-/* Contact page */
+/* =========================
+   CONTACT PAGE
+   ========================= */
+
 .contact-info {
     color: #ffffff;
 }
@@ -174,62 +263,40 @@ ul {
 }
 
 
-
 /* =========================
-   ABOUT PAGE - FINAL FIX
+   MOBILE RESPONSIVE
    ========================= */
 
-.about-text {
-    color: #ffffff;
-    position: relative;
-    z-index: 10;
-}
+@media (max-width: 768px) {
 
-.about-text h2 {
-    color: #4fffb0;
-}
+    .about_image {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 30px;
+    }
 
-.about-text div {
-    color: #ffffff;
-    background-color: transparent;
-    font-size: 16px;
-    line-height: 1.6;
-    font-style: normal;
-    opacity: 1;
-    visibility: visible;
-    display: block;
-    position: relative;
-    z-index: 10;
-}
+    .about-text {
+        text-align: center;
+    }
 
-.about-text p {
-    color: #ffffff;
-    background: transparent;
-    font-size: 16px;
-    line-height: 1.6;
-    font-style: normal;
-    opacity: 1;
-    visibility: visible;
-    display: block;
-    position: relative;
-    z-index: 10;
-}
+    .about-text h2 {
+        font-size: 24px;
+    }
 
-/* TEMPORARY DEBUG */
-.about-text {
-    background-color: red !important;
-    color: white !important;
-    padding: 30px !important;
-    min-height: 300px !important;
-}
+    .about-text p {
+        font-size: 15px;
+    }
 
-.about-text h2 {
-    color: yellow !important;
-}
+    .tech-stack-container {
+        gap: 15px;
+    }
 
-.about-text p {
-    color: white !important;
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-image {
+        width: 100%;
+        max-width: 300px;
+    }
 }
