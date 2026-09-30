@@ -1,44 +1,106 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block content1 %} 
-<div class="row my-5">
-  <div class="col-12 d-flex justify-content-center  align-items-center">
-    <div class="square-image-container">
-        <img class="square-image" src="{% static 'images/pic.jpg' %}" alt="pic">
+{% block content1 %}
+
+<div class="home-section">
+
+    <div class="home-content text-center">
+
+        <!-- Profile Image -->
+        <div class="home-profile">
+            <img src="{% static 'images/pic.jpg' %}" alt="Hemalatha">
+        </div>
+
+
+        <!-- Introduction -->
+        <p class="home-greeting">Hi, I'm</p>
+
+        <h1 class="home-name">
+            Hemalatha V
+        </h1>
+
+        <h2 class="home-role">
+            Python Developer
+        </h2>
+
+
+        <!-- Description -->
+        <p class="home-description">
+            Python Developer with 3+ years of experience in backend
+            development, REST APIs, automation, and production
+            workflow tools. I work with Python, Django, FastAPI,
+            SQL, AWS, and AI/ML technologies.
+        </p>
+
+
+        <!-- Skill Highlights -->
+        <div class="home-highlights">
+
+            <span class="home-highlight">Python</span>
+
+            <span class="home-highlight">Django</span>
+
+            <span class="home-highlight">FastAPI</span>
+
+            <span class="home-highlight">REST APIs</span>
+
+            <span class="home-highlight">SQL</span>
+
+            <span class="home-highlight">AWS</span>
+
+            <span class="home-highlight">AI / ML</span>
+
+        </div>
+
+
+        <!-- Buttons -->
+        <div class="home-buttons">
+
+            <a href="{% url 'projects' %}"
+               class="home-btn home-btn-primary">
+                View Projects
+            </a>
+
+            <a href="{% url 'resume' %}"
+               class="home-btn home-btn-secondary">
+                View Resume
+            </a>
+
+            <a href="{% url 'contact' %}"
+               class="home-btn home-btn-secondary">
+                Contact Me
+            </a>
+
+        </div>
+
+
+        <!-- Social Links -->
+        <div class="home-social">
+
+            <a href="http://www.linkedin.com/in/hema-2311-latha"
+               target="_blank"
+               aria-label="LinkedIn">
+
+                <img src="{% static 'images/linkedin.png' %}"
+                     alt="LinkedIn">
+
+            </a>
+
+
+            <a href="https://www.instagram.com/_hemu_hema_?igsh=NTJkemN3MnpieGY5"
+               target="_blank"
+               aria-label="Instagram">
+
+                <img src="{% static 'images/insta.jpg' %}"
+                     alt="Instagram">
+
+            </a>
+
+        </div>
+
     </div>
-  </div> 
-
-<div class="col-12 text-center mt-4">
-    <h4 class="title"> Hi, My name is </h4>
-    <div class="name">
-        <h1> Hemalatha </h1>
-        <h2> I am Python Developer</h2>
-    </div>
-</div>
-
-<div class="col-12 text-center mt-4">
-  <div class="col-12 d-flex justify-content-center  align-items-center">
-    <a href="http://www.linkedin.com/in/hema-2311-latha" target="_blank" class="ms-3"> 
-      <img src="{% static 'images/linkedin.png' %}" alt="images/linkedin.png" width="50" height="50"
-      class="social_links">
-    </a>
-
-    <a href="https://www.instagram.com/_hemu_hema_?igsh=NTJkemN3MnpieGY5" target="_blank" class="ms-3"> 
-      <img src="{% static 'images/insta.jpg' %}" alt="images/insta.jpg" width="50" height="50"
-      class="social_links">
-    </a>
-
-
-  </div>
-
 
 </div>
- 
-
-
-</div>
-
-
 
 {% endblock content1 %}
