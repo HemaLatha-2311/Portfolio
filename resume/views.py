@@ -70,7 +70,6 @@ def certification (request):
 
 def contact(request):
     if request.method == "POST":
-
         name = request.POST.get("name")
         email = request.POST.get("email")
         phone = request.POST.get("phone")
@@ -87,14 +86,11 @@ def contact(request):
 
         try:
             send_mail(
-                subject=subject,
-                message=full_message,
-                from_email=settings.DEFAULT_FROM_EMAIL,
-                recipient_list=[settings.CONTACT_EMAIL],
+                subject,
+                full_message,
+                settings.DEFAULT_FROM_EMAIL,
+                [settings.CONTACT_EMAIL],
                 fail_silently=False,
-                headers={
-                    "Reply-To": email,
-                },
             )
 
             messages.success(
@@ -104,13 +100,13 @@ def contact(request):
 
         except Exception as e:
             print("EMAIL ERROR:", e)
-
             messages.error(
                 request,
                 "Sorry, your message could not be sent. Please try again."
             )
 
     return render(request, "contact.html")
+
 
 
 
