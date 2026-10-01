@@ -1076,3 +1076,121 @@ ul {
         min-width: 135px;
     }
 }
+
+/* =========================
+   ABOUT PAGE - NEW DESIGN
+   ========================= */
+
+.about-label {
+    color: #4fffb0 !important;
+    font-size: 14px !important;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px !important;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.about-focus {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.about-focus-card {
+    background-color: #15181d;
+    border: 1px solid #30353c;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+
+.about-focus-card:hover {
+    border-color: #4fffb0;
+    transform: translateY(-4px);
+}
+
+.about-focus-card h4 {
+    color: #4fffb0;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.about-focus-card p {
+    color: #bfc5ca;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+
+/* Technology Categories */
+
+.stack-category {
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+
+/* Technology Item */
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.tech-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.tech-item span {
+    color: #cdd2d7;
+    font-size: 13px;
+}
+
+.tech-item:hover img {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(79, 255, 176, 0.15);
+}
+
+.tech-item:hover span {
+    color: #4fffb0;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .about-focus {
+        grid-template-columns: 1fr;
+    }
+
+    .about-text h2 {
+        font-size: 26px;
+    }
+
+    .stack-category {
+        margin-top: 30px;
+    }
+
+}
+
+
