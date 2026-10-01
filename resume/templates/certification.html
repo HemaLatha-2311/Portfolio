@@ -1,32 +1,78 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block content1 %} 
-<div class="container my-4">
+{% block content1 %}
 
+<div class="certification-container">
 
-  <!-- Python Certification Box -->    
-  <div class="row justify-content-center mb-4">
-    <div class="col-md-8">
-      <div class="jumbotron p-4">
-        <h1 class="display4 m-0">Python</h1>
-        <p class="lead mt-2">Completed Python certification focusing on backend development with Django, data handling using Pandas, and REST APIs.</p>
-      </div>
-    </div>
-  </div>
-    
+```
+<!-- PAGE HEADER -->
 
-  <!-- Java Certification Box -->
-  <div class="row justify-content-center mb-4">
-    <div class="col-md-8">
-      <div class="jumbotron p-4">
-        <h1 class="display4 m-0">JAVA</h1>
-        <p class="lead mt-2">Completed Java training with Basics in OOP concepts.</p>
-      </div>
-    </div>
-  </div>
+<div class="certification-header">
 
+    <p class="certification-label">MY LEARNING</p>
 
+    <h1>Certifications</h1>
+
+    <p class="certification-intro">
+        Certifications and technical training that support my
+        software development journey.
+    </p>
 
 </div>
+
+
+<!-- CERTIFICATION LIST -->
+
+<div class="certification-list">
+
+    <!-- Python -->
+
+    <div class="certification-card">
+
+        <div class="certification-icon">
+            🐍
+        </div>
+
+        <div class="certification-content">
+
+            <h2>Python</h2>
+
+            <p>
+                Completed Python certification focusing on backend
+                development with Django, data handling using Pandas,
+                and REST APIs.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Java -->
+
+    <div class="certification-card">
+
+        <div class="certification-icon">
+            ☕
+        </div>
+
+        <div class="certification-content">
+
+            <h2>Java</h2>
+
+            <p>
+                Completed Java training with basics in
+                Object-Oriented Programming concepts.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</div>
+
 {% endblock content1 %}
