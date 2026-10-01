@@ -245,36 +245,220 @@ body {
 
 
 /* =========================
-   JUMBOTRON
+   EXPERIENCE PAGE
    ========================= */
 
-.jumbotron {
-    background-color: #002244;
-
-    padding: 20px;
-
-    border-radius: 10px;
+.experience-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 30px 40px;
 }
 
 
-.display4 {
-    color: #eef3f8;
+/* PAGE HEADER */
 
-    font-size: 24px;
+.experience-header {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.experience-label {
+    color: #4fffb0;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 6px;
+}
+
+.experience-header h1 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+.experience-intro {
+    color: #aeb5bd;
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 0;
 }
 
 
-.lead {
-    font-size: 18px;
+/* EXPERIENCE LIST */
 
-    color: #28a745;
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 
-.jumbotron img {
-    max-height: 40px;
+/* EXPERIENCE CARD */
+
+.experience-item {
+    background-color: #1c1f24;
+
+    padding: 20px 22px;
+
+    border-radius: 12px;
+
+    border: 1px solid #30353c;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+
+    transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+    border-color: #4fffb0;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.3),
+        0 0 12px rgba(79, 255, 176, 0.05);
+}
+
+
+/* COMPANY + LOGO */
+
+.experience-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 12px;
+}
+
+.experience-top h2 {
+    color: #ffffff;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    margin: 0 0 5px;
+}
+
+
+/* POSITION */
+
+.experience-position {
+    color: #4fffb0;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    margin: 0 0 3px;
+}
+
+
+/* PERIOD */
+
+.experience-period {
+    color: #8f98a1;
+
+    font-size: 12px;
+
+    margin: 0;
+}
+
+
+/* LOGO */
+
+.company-logo {
+    width: 65px;
+    height: 65px;
 
     object-fit: contain;
+
+    border-radius: 8px;
+
+    background-color: #ffffff;
+
+    padding: 5px;
+
+    flex-shrink: 0;
+}
+
+
+/* EXPERIENCE POINTS */
+
+.experience-points {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.experience-points li {
+    color: #d0d5da;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+
+    margin-bottom: 5px;
+}
+
+.experience-points li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .experience-container {
+        padding: 22px 15px 30px;
+    }
+
+    .experience-header {
+        margin-bottom: 22px;
+    }
+
+    .experience-header h1 {
+        font-size: 25px;
+    }
+
+    .experience-intro {
+        font-size: 13px;
+    }
+
+    .experience-list {
+        gap: 15px;
+    }
+
+    .experience-item {
+        padding: 17px;
+    }
+
+    .experience-top {
+        gap: 12px;
+    }
+
+    .experience-top h2 {
+        font-size: 18px;
+    }
+
+    .experience-position {
+        font-size: 13px;
+    }
+
+    .experience-points li {
+        font-size: 13px;
+    }
+
+    .company-logo {
+        width: 55px;
+        height: 55px;
+    }
 }
 
 
