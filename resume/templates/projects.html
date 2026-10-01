@@ -5,28 +5,29 @@
 
 <div class="projects-container">
 
-    <!-- PROJECT HEADER -->
+    <!-- PAGE TITLE -->
+
     <div class="projects-header">
 
-        <p class="projects-label">MY WORK</p>
+        <p class="projects-label">MY PROJECTS</p>
 
         <h1>Projects</h1>
 
         <p class="projects-intro">
-            A collection of projects built using Python, APIs,
-            databases, automation, AI/ML, and cloud technologies.
+            Projects developed using Python, APIs, databases,
+            automation, AI/ML, and cloud technologies.
         </p>
 
     </div>
 
 
-    <!-- PROJECT LIST -->
+    <!-- PROJECTS -->
 
-    {% for project in projects %}
+    <div class="projects-list">
 
-    <div class="project-card">
+        {% for project in projects %}
 
-        <div class="project-details">
+        <div class="project-item">
 
             <h2>{{ project.title }}</h2>
 
@@ -41,20 +42,9 @@
 
         </div>
 
-
-        <div class="project-image-container">
-
-            <img
-                src="{% static project.image %}"
-                alt="{{ project.title }}"
-                class="project-image"
-            >
-
-        </div>
+        {% endfor %}
 
     </div>
-
-    {% endfor %}
 
 </div>
 
