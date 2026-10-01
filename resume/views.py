@@ -20,18 +20,43 @@ def about(request):
 def projects(request):
     project_list = [
         {
-            'title': 'Multivendor Marketplace',
-            'tech_stack': 'Python, SQLite3, OOP',
-            'description': 'Developed a marketplace system where multiple vendors can register securely and manage their own products. Key features include secure login, product CRUD operations, and a user-friendly interface built using Python and SQLite3.',
-            'image': 'images/multivendor.png'  # Add this image in your static folder
+            'title': 'Customer Churn Prediction',
+            'tech_stack': 'Python, Pandas, scikit-learn, Matplotlib',
+            'description': 'Built an end-to-end machine learning pipeline to predict customer churn. Performed data preprocessing, feature engineering, model training, comparison, and evaluation to identify customers at risk of leaving.',
+            'image': 'images/churn_prediction.png'
         },
         {
-            'title': 'ATM System Using Fingerprint',
-            'tech_stack': 'Biometric Module, Embedded Systems',
-            'description': 'Designed a fingerprint-based ATM system as a secure replacement for physical ATM cards. The system uses biometric authentication to ensure that only authorized users can access ATM functionalities.',
-            'image': 'images/atm.PNG'  # Add this image in your static folder
+            'title': 'Support Ticket Text Classifier',
+            'tech_stack': 'Python, scikit-learn, NLTK, FastAPI',
+            'description': 'Developed an NLP-based text classification system to categorize support tickets automatically. Built a FastAPI endpoint to expose the trained classification model for application use.',
+            'image': 'images/support_ticket.png'
+        },
+        {
+            'title': 'Task Management API',
+            'tech_stack': 'Python, FastAPI, PostgreSQL, REST API',
+            'description': 'Developed a REST API for task management with CRUD operations and task assignment functionality. Used FastAPI for API development and PostgreSQL for database management.',
+            'image': 'images/task_management.png'
+        },
+        {
+            'title': 'AWS File Upload & Management',
+            'tech_stack': 'Python, AWS EC2, AWS S3, REST API',
+            'description': 'Developed a file management application for secure file upload, storage, retrieval, and deletion. Integrated AWS S3 for cloud storage and AWS EC2 for application deployment.',
+            'image': 'images/aws_file_management.png'
+        },
+        {
+            'title': 'Multi-Region Tool Sync',
+            'tech_stack': 'Python, REST API, MySQL, Microsoft Teams API',
+            'description': 'Developed a synchronization system for internal tools across India, Malaysia, and Singapore. Integrated REST APIs and MySQL for data synchronization and Microsoft Teams API for notifications.',
+            'image': 'images/multi_region_sync.png'
+        },
+        {
+            'title': 'Multivendor Marketplace',
+            'tech_stack': 'Python, SQLite, REST API',
+            'description': 'Developed a multivendor marketplace application with vendor authentication, product management, CRUD operations, and vendor-specific access to products.',
+            'image': 'images/multivendor.png'
         },
     ]
+
     return render(request, "projects.html", {'projects': project_list})
 
 
