@@ -385,31 +385,25 @@ body {
    ========================= */
 
 .experience-logo {
-    width: 85px;
-
-    height: 60px;
+    width: 65px;
+    height: 45px;
 
     display: flex;
-
     justify-content: center;
-
     align-items: center;
 
     flex-shrink: 0;
 }
 
 .experience-logo img {
-    max-width: 80px;
-
-    max-height: 55px;
+    max-width: 55px;
+    max-height: 40px;
 
     width: auto;
-
     height: auto;
 
     object-fit: contain;
-
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 
@@ -480,15 +474,15 @@ body {
         font-size: 11px;
     }
 
-    .experience-logo {
-        width: 70px;
-        height: 50px;
-    }
-
-    .experience-logo img {
-        max-width: 65px;
-        max-height: 45px;
-    }
+   .experience-logo {
+       width: 55px;
+       height: 40px;
+   }
+   
+   .experience-logo img {
+       max-width: 48px;
+       max-height: 35px;
+   }
 
     .experience-points {
         padding-left: 18px;
