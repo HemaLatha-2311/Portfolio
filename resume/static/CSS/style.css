@@ -1328,3 +1328,214 @@ body {
         height: 18px;
     }
 }
+
+
+/* =========================
+   CERTIFICATION PAGE
+   ========================= */
+
+.certification-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 28px 25px 35px;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.certification-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.certification-label {
+    color: #4fffb0;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin: 0 0 5px;
+}
+
+.certification-header h1 {
+    color: #ffffff;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    margin: 0 0 8px;
+}
+
+.certification-intro {
+    color: #aeb5bd;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin: 0 auto;
+
+    max-width: 600px;
+}
+
+
+/* =========================
+   CERTIFICATION LIST
+   ========================= */
+
+.certification-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* =========================
+   CERTIFICATION CARD
+   ========================= */
+
+.certification-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background-color: #1c1f24;
+
+    border: 1px solid #30353d;
+
+    border-radius: 12px;
+
+    padding: 20px 24px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s ease;
+}
+
+.certification-card:hover {
+    border-color: #4fffb0;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 20px rgba(79, 255, 176, 0.08);
+}
+
+
+/* =========================
+   ICON
+   ========================= */
+
+.certification-icon {
+    width: 55px;
+
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #252a30;
+
+    border: 1px solid #3a4149;
+
+    border-radius: 10px;
+
+    font-size: 27px;
+}
+
+
+/* =========================
+   CONTENT
+   ========================= */
+
+.certification-content h2 {
+    color: #ffffff;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin: 0 0 6px;
+}
+
+.certification-content p {
+    color: #d0d5da;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .certification-container {
+        padding: 22px 15px 30px;
+    }
+
+    .certification-header {
+        margin-bottom: 20px;
+    }
+
+    .certification-header h1 {
+        font-size: 27px;
+    }
+
+    .certification-intro {
+        font-size: 13px;
+    }
+
+    .certification-card {
+        gap: 14px;
+
+        padding: 16px;
+    }
+
+    .certification-icon {
+        width: 45px;
+
+        height: 45px;
+
+        font-size: 22px;
+    }
+
+    .certification-content h2 {
+        font-size: 18px;
+    }
+
+    .certification-content p {
+        font-size: 12px;
+
+        line-height: 1.5;
+    }
+}
+
+
+
+
+
+
+
