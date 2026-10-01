@@ -6,7 +6,6 @@
 <div class="experience-container">
 
     <!-- PAGE HEADER -->
-
     <div class="experience-header">
 
         <p class="experience-label">MY JOURNEY</p>
@@ -22,7 +21,6 @@
 
 
     <!-- EXPERIENCE LIST -->
-
     <div class="experience-list">
 
         {% for eachtime in experience %}
@@ -31,7 +29,7 @@
 
             <div class="experience-top">
 
-                <div>
+                <div class="experience-details">
 
                     <h2>{{ eachtime.company }}</h2>
 
@@ -45,11 +43,12 @@
 
                 </div>
 
-                <img
-                    src="{% static eachtime.logo %}"
-                    alt="{{ eachtime.company }} Logo"
-                    class="company-logo"
-                >
+                <div class="experience-logo">
+                    <img
+                        src="{% static eachtime.logo %}"
+                        alt="{{ eachtime.company }} Logo"
+                    >
+                </div>
 
             </div>
 
@@ -57,9 +56,7 @@
             <ul class="experience-points">
 
                 {% for point in eachtime.points %}
-
-                <li>{{ point }}</li>
-
+                    <li>{{ point }}</li>
                 {% endfor %}
 
             </ul>
