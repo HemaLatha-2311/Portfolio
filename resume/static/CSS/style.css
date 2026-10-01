@@ -252,15 +252,17 @@ body {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 30px 30px 40px;
+    padding: 28px 25px 35px;
 }
 
 
-/* PAGE HEADER */
+/* =========================
+   EXPERIENCE HEADER
+   ========================= */
 
 .experience-header {
-    text-align: left;
-    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 .experience-label {
@@ -269,12 +271,12 @@ body {
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin: 0 0 6px;
+    margin: 0 0 5px;
 }
 
 .experience-header h1 {
     color: #ffffff;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 700;
     margin: 0 0 8px;
 }
@@ -282,35 +284,39 @@ body {
 .experience-intro {
     color: #aeb5bd;
     font-size: 14px;
-    line-height: 1.5;
-    max-width: 700px;
-    margin: 0;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 650px;
 }
 
 
-/* EXPERIENCE LIST */
+/* =========================
+   EXPERIENCE LIST
+   ========================= */
 
 .experience-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
 }
 
 
-/* EXPERIENCE CARD */
+/* =========================
+   EXPERIENCE CARD
+   ========================= */
 
 .experience-item {
     background-color: #1c1f24;
 
-    padding: 20px 22px;
+    border: 1px solid #30353d;
 
     border-radius: 12px;
 
-    border: 1px solid #30353c;
+    padding: 20px 24px;
 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .experience-item:hover {
@@ -318,50 +324,55 @@ body {
 
     transform: translateY(-2px);
 
-    box-shadow:
-        0 6px 18px rgba(0, 0, 0, 0.3),
-        0 0 12px rgba(79, 255, 176, 0.05);
+    box-shadow: 0 6px 20px rgba(79, 255, 176, 0.08);
 }
 
 
-/* COMPANY + LOGO */
+/* =========================
+   TOP SECTION
+   ========================= */
 
 .experience-top {
     display: flex;
+
     justify-content: space-between;
-    align-items: center;
+
+    align-items: flex-start;
 
     gap: 20px;
-
-    margin-bottom: 12px;
 }
 
-.experience-top h2 {
+
+/* =========================
+   COMPANY DETAILS
+   ========================= */
+
+.experience-details {
+    flex: 1;
+}
+
+.experience-details h2 {
     color: #ffffff;
 
     font-size: 21px;
+
     font-weight: 700;
 
     margin: 0 0 5px;
 }
 
-
-/* POSITION */
-
 .experience-position {
     color: #4fffb0;
 
     font-size: 14px;
+
     font-weight: 600;
 
-    margin: 0 0 3px;
+    margin: 0 0 4px;
 }
 
-
-/* PERIOD */
-
 .experience-period {
-    color: #8f98a1;
+    color: #9da5ad;
 
     font-size: 12px;
 
@@ -369,28 +380,46 @@ body {
 }
 
 
-/* LOGO */
+/* =========================
+   COMPANY LOGO
+   ========================= */
 
-.company-logo {
-    width: 65px;
-    height: 65px;
+.experience-logo {
+    width: 85px;
 
-    object-fit: contain;
+    height: 60px;
 
-    border-radius: 8px;
+    display: flex;
 
-    background-color: #ffffff;
+    justify-content: center;
 
-    padding: 5px;
+    align-items: center;
 
     flex-shrink: 0;
 }
 
+.experience-logo img {
+    max-width: 80px;
 
-/* EXPERIENCE POINTS */
+    max-height: 55px;
+
+    width: auto;
+
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 5px;
+}
+
+
+/* =========================
+   EXPERIENCE POINTS
+   ========================= */
 
 .experience-points {
-    margin: 0;
+    margin: 15px 0 0;
+
     padding-left: 20px;
 }
 
@@ -399,13 +428,13 @@ body {
 
     font-size: 13px;
 
-    line-height: 1.55;
+    line-height: 1.6;
 
     margin-bottom: 5px;
 }
 
-.experience-points li:last-child {
-    margin-bottom: 0;
+.experience-points li::marker {
+    color: #4fffb0;
 }
 
 
@@ -420,11 +449,11 @@ body {
     }
 
     .experience-header {
-        margin-bottom: 22px;
+        margin-bottom: 20px;
     }
 
     .experience-header h1 {
-        font-size: 25px;
+        font-size: 27px;
     }
 
     .experience-intro {
@@ -439,11 +468,7 @@ body {
         padding: 17px;
     }
 
-    .experience-top {
-        gap: 12px;
-    }
-
-    .experience-top h2 {
+    .experience-details h2 {
         font-size: 18px;
     }
 
@@ -451,44 +476,29 @@ body {
         font-size: 13px;
     }
 
+    .experience-period {
+        font-size: 11px;
+    }
+
+    .experience-logo {
+        width: 70px;
+        height: 50px;
+    }
+
+    .experience-logo img {
+        max-width: 65px;
+        max-height: 45px;
+    }
+
+    .experience-points {
+        padding-left: 18px;
+        margin-top: 12px;
+    }
+
     .experience-points li {
-        font-size: 13px;
+        font-size: 12px;
+        line-height: 1.5;
     }
-
-    .company-logo {
-        width: 55px;
-        height: 55px;
-    }
-}
-
-
-/* =========================
-   LIST
-   ========================= */
-
-ul {
-    padding-left: 1.2rem;
-
-    margin-top: 0.5rem;
-}
-
-
-/* =========================
-   COMPANY LOGO
-   ========================= */
-
-.company-logo {
-    height: 60px;
-
-    width: auto;
-
-    object-fit: contain;
-
-    border-radius: 6px;
-
-    background-color: transparent;
-
-    padding: 2px;
 }
 
 
