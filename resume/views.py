@@ -64,28 +64,43 @@ def projects(request):
 def experience(request):
     experience = [
         {
-            "company": "WiseLearnz",
-            "position": "Python Full Stack Developer Trainee",
-            "logo": "images/wiselearnz.jpg",
+            "company": "Spectre Post Private Ltd",
+            "position": "Python Developer",
+            "period": "Jun 2026 – Present",
+            "logo": "images/spectre.png",
             "points": [
-                "Completed Training and Internship Program (TIP) with an impressive Grade A(83%)",
-                "Executed 4 OOPS Projects showcasing strong object-orieted programming skills.",
-                "Developed 2 Tkinter applications demonstrating proficiency in graphical user interface development."
+                "Developing Python-based tools and applications for production workflows.",
+                "Working with Python, automation, APIs, and database-driven applications.",
+                "Contributing to reliable and maintainable software solutions."
             ]
         },
         {
             "company": "Sparky Entertainment Private Limited",
             "position": "Junior Python Developer",
+            "period": "Jan 2023 – May 2026",
             "logo": "images/sparky.png",
             "points": [
-                "Commitment to delivering superior quality animation that exceeds industry standards.",
-                "Utilied Python, MEL(Maya Embedded Language) and designed tool's user interfaces using PYQT5 and Qt.",
-                "Designer to create user-friendly and efficient animation tools."
+                "Developed Python-based automation tools for production workflows.",
+                "Utilized Python and MEL (Maya Embedded Language) for workflow automation.",
+                "Designed user interfaces for animation tools using PyQt5 and Qt.",
+                "Developed user-friendly and efficient tools to support production requirements."
+            ]
+        },
+        {
+            "company": "WiseLearnz",
+            "position": "Python Full Stack Developer Trainee",
+            "period": "Training & Internship Program",
+            "logo": "images/wiselearnz.jpg",
+            "points": [
+                "Completed Training and Internship Program (TIP) with Grade A (83%).",
+                "Executed 4 OOP projects demonstrating object-oriented programming skills.",
+                "Developed 2 Tkinter applications for graphical user interface development."
             ]
         }
     ]
 
-    return render (request,"experience.html", {"experience" : experience})     
+    return render(request, "experience.html", {"experience": experience})
+
 
 def certification (request):
 
