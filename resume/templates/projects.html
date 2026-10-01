@@ -3,20 +3,59 @@
 
 {% block content1 %}
 
-
 <div class="projects-container">
-    <ul class="text-light">
-        {% for project in projects %}
-            <div class="project-card">
-                <div class="project-details">
-                    <h2>{{ project.title }}</h2>
-                    <p><strong>Tech Stack:</strong> {{ project.tech_stack }}</p>
-                    <p>{{ project.description }}</p>
-                </div>
-                <img src="{% static project.image %}" alt="{{ project.title }} image" class="project-image">
-            </div>
-        {% endfor %}
- 
-     </ul>
+
+    <!-- PROJECT HEADER -->
+    <div class="projects-header">
+
+        <p class="projects-label">MY WORK</p>
+
+        <h1>Projects</h1>
+
+        <p class="projects-intro">
+            A collection of projects built using Python, APIs,
+            databases, automation, AI/ML, and cloud technologies.
+        </p>
+
+    </div>
+
+
+    <!-- PROJECT LIST -->
+
+    {% for project in projects %}
+
+    <div class="project-card">
+
+        <div class="project-details">
+
+            <h2>{{ project.title }}</h2>
+
+            <p class="project-tech">
+                <strong>Tech Stack:</strong>
+                {{ project.tech_stack }}
+            </p>
+
+            <p class="project-description">
+                {{ project.description }}
+            </p>
+
+        </div>
+
+
+        <div class="project-image-container">
+
+            <img
+                src="{% static project.image %}"
+                alt="{{ project.title }}"
+                class="project-image"
+            >
+
+        </div>
+
+    </div>
+
+    {% endfor %}
+
 </div>
+
 {% endblock content1 %}
