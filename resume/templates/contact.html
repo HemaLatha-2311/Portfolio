@@ -1,89 +1,174 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block content1 %}
 
-{% block content1 %} 
+<div class="contact-container">
 
-{% if messages %}
-  {% for message in messages %}
-    <div class="alert alert-{{ message.tags }} alert-dismissible fade show m-3" role="alert" id="success-alert">
-    
-      {{ message }}
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <!-- PAGE HEADER -->
+    <div class="contact-header">
+        <p class="contact-label">GET IN TOUCH</p>
+
+        <h1>Contact Me</h1>
+
+        <p class="contact-intro">
+            Have a project, opportunity, or question?
+            Feel free to get in touch with me.
+        </p>
     </div>
-  {% endfor %}
-{% endif %}
 
 
+    <!-- SUCCESS / ERROR MESSAGE -->
+    {% if messages %}
+        {% for message in messages %}
+            <div class="contact-message {{ message.tags }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
 
-<div class = "row my-2">
-    
-    <div class="col-4 text-center my-5 contact-info">
-        <h1 class = "mt-5"> Stay Connected </h1>
-        <h3 class = "mt-5"> hema1107latha@gmail.com </h3>    
 
-        
-            <div class="col-12 d-flex justify-content-center  align-items-center mt-5">
-                <a href="http://www.linkedin.com/in/hema-2311-latha" target="_blank" class="ms-3"> 
-                <img src="{% static 'images/linkedin.png' %}" alt="images/linkedin.png" width="50" height="50"
-                class="social_links">
-                </a>
+    <!-- CONTACT CONTENT -->
+    <div class="contact-content">
 
-                <a href="https://www.instagram.com/_hemu_hema_?igsh=NTJkemN3MnpieGY5" target="_blank" class="ms-3"> 
-                <img src="{% static 'images/insta.jpg' %}" alt="images/insta.jpg" width="50" height="50"
-                class="social_links">
-                </a>
+        <!-- LEFT SIDE -->
+        <div class="contact-info-card">
 
-                
-                
+            <p class="contact-small-title">LET'S CONNECT</p>
+
+            <h2>Stay Connected</h2>
+
+            <p class="contact-description">
+                I'm always open to discussing Python development,
+                backend projects, automation, and new opportunities.
+            </p>
+
+
+            <!-- EMAIL -->
+            <div class="contact-detail">
+
+                <div class="contact-icon">
+                    ✉
+                </div>
+
+                <div>
+                    <span>Email</span>
+                    <a href="mailto:hema1107latha@gmail.com">
+                        hema1107latha@gmail.com
+                    </a>
+                </div>
+
             </div>
 
 
+            <!-- SOCIAL LINKS -->
+            <div class="contact-social">
+
+                <a href="http://www.linkedin.com/in/hema-2311-latha"
+                   target="_blank"
+                   aria-label="LinkedIn">
+
+                    <img src="{% static 'images/linkedin.png' %}"
+                         alt="LinkedIn">
+
+                </a>
 
 
+                <a href="https://www.instagram.com/_hemu_hema_?igsh=NTJkemN3MnpieGY5"
+                   target="_blank"
+                   aria-label="Instagram">
 
+                    <img src="{% static 'images/insta.jpg' %}"
+                         alt="Instagram">
+
+                </a>
 
             </div>
-     
-                    <div class = "col-5 offset-1 mt-3">
 
-                        <div class = "container form-container">
-                            <form method="POST" action="">
-                                {% csrf_token %}
-                                <div class="form-group m-3">
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" class="form-control" id="name" pattern="[A-Za-z\s]{1,50}" title="Only letters and spaces allowed" required>
+        </div>
 
-                                </div>
 
-                                <div class="form-group m-3">
-                                    <label for="email">Email</label>
-                                    <input type="email" name="email" class="form-control" id="email" required>
-                                </div>
+        <!-- RIGHT SIDE - CONTACT FORM -->
+        <div class="contact-form-card">
 
-                                <div class="form-group m-3">
-                                    <label for="phone">Phone No</label>
-                                    <input type="tel" name="phone" class="form-control" id="phone" pattern="[0-9]{10}" required>
-                                </div>
+            <form method="POST" action="">
 
-                                <div class="form-group m-3">
-                                    <label for="msg">Message</label>
-                                    <textarea name="message" class="form-control" id="msg" rows="2" required></textarea>
-                                </div>
+                {% csrf_token %}
 
-                                <button type="submit" class="btn btn-primary m-3">Submit</button>
-                            </form>
-                        </div>
- 
-                    </div>    
 
-            </div>  
+                <div class="contact-form-group">
+
+                    <label for="name">Name</label>
+
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        pattern="[A-Za-z\s]{1,50}"
+                        title="Only letters and spaces allowed"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="contact-form-group">
+
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="contact-form-group">
+
+                    <label for="phone">Phone No</label>
+
+                    <input
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        pattern="[0-9]{10}"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="contact-form-group">
+
+                    <label for="msg">Message</label>
+
+                    <textarea
+                        name="message"
+                        id="msg"
+                        rows="5"
+                        placeholder="Write your message..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button type="submit" class="contact-submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
 
     </div>
-
 
 </div>
-
-
 
 {% endblock content1 %}
