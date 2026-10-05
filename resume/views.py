@@ -8,6 +8,7 @@ from django.contrib.staticfiles import finders
 from django.core.mail import send_mail
 from django.shortcuts import render
 from django.contrib import messages
+import resend
 
 
 # Create your views here.
@@ -125,13 +126,16 @@ def contact(request):
         )
 
         try:
-            send_mail(
-                subject,
-                full_message,
-                settings.DEFAULT_FROM_EMAIL,
-                [settings.CONTACT_EMAIL],
-                fail_silently=False,
-            )
+            resend.api_key = settings.RESEND_API_KEY
+
+            params = {
+                "from": "onboarding@resend.dev",
+                "to": ["hema1107latha@gmail.com"],
+                "subject": subject,
+                "text": full_message,
+            }
+
+            resend.Emails.send(params)
 
             messages.success(
                 request,
@@ -139,14 +143,13 @@ def contact(request):
             )
 
         except Exception as e:
-            print("EMAIL ERROR:", e)
+            print("EMAIL ERROR:", repr(e))
             messages.error(
                 request,
                 "Sorry, your message could not be sent. Please try again."
             )
 
     return render(request, "contact.html")
-
 
 
 
