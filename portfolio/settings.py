@@ -171,3 +171,5 @@ CONTACT_EMAIL = os.environ.get(
     EMAIL_HOST_USER
 )
 
+RESEND_API_KEY = os.environ.get("RESEND_API_KEY")
+
