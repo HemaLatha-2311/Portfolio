@@ -5,20 +5,18 @@
 
 <div class="contact-container">
 
-    <!-- PAGE HEADER -->
     <div class="contact-header">
         <p class="contact-label">GET IN TOUCH</p>
 
         <h1>Contact Me</h1>
 
         <p class="contact-intro">
-            Have a project, opportunity, or question?
-            Feel free to get in touch with me.
+            Have a question, project idea, or opportunity?
+            Feel free to get in touch.
         </p>
     </div>
 
 
-    <!-- SUCCESS / ERROR MESSAGE -->
     {% if messages %}
         {% for message in messages %}
             <div class="contact-message {{ message.tags }}">
@@ -28,40 +26,25 @@
     {% endif %}
 
 
-    <!-- CONTACT CONTENT -->
-    <div class="contact-content">
+    <div class="contact-box">
 
         <!-- LEFT SIDE -->
-        <div class="contact-info-card">
-
-            <p class="contact-small-title">LET'S CONNECT</p>
+        <div class="contact-info">
 
             <h2>Stay Connected</h2>
 
-            <p class="contact-description">
-                I'm always open to discussing Python development,
+            <p>
+                I'm open to discussing Python development,
                 backend projects, automation, and new opportunities.
             </p>
 
-
-            <!-- EMAIL -->
-            <div class="contact-detail">
-
-                <div class="contact-icon">
-                    ✉
-                </div>
-
-                <div>
-                    <span>Email</span>
-                    <a href="mailto:hema1107latha@gmail.com">
-                        hema1107latha@gmail.com
-                    </a>
-                </div>
-
+            <div class="contact-email">
+                <span>Email</span>
+                <a href="mailto:hema1107latha@gmail.com">
+                    hema1107latha@gmail.com
+                </a>
             </div>
 
-
-            <!-- SOCIAL LINKS -->
             <div class="contact-social">
 
                 <a href="http://www.linkedin.com/in/hema-2311-latha"
@@ -72,7 +55,6 @@
                          alt="LinkedIn">
 
                 </a>
-
 
                 <a href="https://www.instagram.com/_hemu_hema_?igsh=NTJkemN3MnpieGY5"
                    target="_blank"
@@ -88,16 +70,14 @@
         </div>
 
 
-        <!-- RIGHT SIDE - CONTACT FORM -->
-        <div class="contact-form-card">
+        <!-- RIGHT SIDE -->
+        <div class="contact-form">
 
             <form method="POST" action="">
 
                 {% csrf_token %}
 
-
-                <div class="contact-form-group">
-
+                <div class="contact-field">
                     <label for="name">Name</label>
 
                     <input
@@ -106,30 +86,24 @@
                         id="name"
                         pattern="[A-Za-z\s]{1,50}"
                         title="Only letters and spaces allowed"
-                        placeholder="Enter your name"
                         required
                     >
-
                 </div>
 
 
-                <div class="contact-form-group">
-
+                <div class="contact-field">
                     <label for="email">Email</label>
 
                     <input
                         type="email"
                         name="email"
                         id="email"
-                        placeholder="Enter your email"
                         required
                     >
-
                 </div>
 
 
-                <div class="contact-form-group">
-
+                <div class="contact-field">
                     <label for="phone">Phone No</label>
 
                     <input
@@ -137,25 +111,20 @@
                         name="phone"
                         id="phone"
                         pattern="[0-9]{10}"
-                        placeholder="Enter your phone number"
                         required
                     >
-
                 </div>
 
 
-                <div class="contact-form-group">
-
+                <div class="contact-field">
                     <label for="msg">Message</label>
 
                     <textarea
                         name="message"
                         id="msg"
-                        rows="5"
-                        placeholder="Write your message..."
+                        rows="3"
                         required
                     ></textarea>
-
                 </div>
 
 
