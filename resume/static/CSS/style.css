@@ -504,18 +504,6 @@ body {
 
 .projects-container {
     width: 100%;
-    max-width: 1050px;
-    margin: 0 auto;
-    padding: 28px 25px 35px;
-}
-
-
-/* =========================
-   PROJECTS PAGE
-   ========================= */
-
-.projects-container {
-    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     padding: 30px 30px 40px;
