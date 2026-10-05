@@ -3,33 +3,36 @@
 
 {% block content1 %}
 
-<div class="contact-container">
+<div class="contact-page">
 
-    <div class="contact-header">
-        <p class="contact-label">GET IN TOUCH</p>
+    <!-- HEADER -->
+    <div class="contact-page-header">
+        <p class="contact-page-label">GET IN TOUCH</p>
 
         <h1>Contact Me</h1>
 
-        <p class="contact-intro">
+        <p class="contact-page-intro">
             Have a question, project idea, or opportunity?
             Feel free to get in touch.
         </p>
     </div>
 
 
+    <!-- SUCCESS / ERROR MESSAGE -->
     {% if messages %}
         {% for message in messages %}
-            <div class="contact-message {{ message.tags }}">
+            <div class="contact-page-message {{ message.tags }}">
                 {{ message }}
             </div>
         {% endfor %}
     {% endif %}
 
 
-    <div class="contact-box">
+    <!-- CONTACT CONTENT -->
+    <div class="contact-page-card">
 
-        <!-- LEFT SIDE -->
-        <div class="contact-info">
+        <!-- LEFT -->
+        <div class="contact-page-info">
 
             <h2>Stay Connected</h2>
 
@@ -38,14 +41,18 @@
                 backend projects, automation, and new opportunities.
             </p>
 
-            <div class="contact-email">
+            <div class="contact-page-email">
+
                 <span>Email</span>
+
                 <a href="mailto:hema1107latha@gmail.com">
                     hema1107latha@gmail.com
                 </a>
+
             </div>
 
-            <div class="contact-social">
+
+            <div class="contact-page-social">
 
                 <a href="http://www.linkedin.com/in/hema-2311-latha"
                    target="_blank"
@@ -70,65 +77,73 @@
         </div>
 
 
-        <!-- RIGHT SIDE -->
-        <div class="contact-form">
+        <!-- RIGHT -->
+        <div class="contact-page-form">
 
-            <form method="POST" action="">
+            <form method="POST">
 
                 {% csrf_token %}
 
-                <div class="contact-field">
-                    <label for="name">Name</label>
+                <div class="contact-page-field">
+
+                    <label for="contact-name">Name</label>
 
                     <input
                         type="text"
                         name="name"
-                        id="name"
+                        id="contact-name"
                         pattern="[A-Za-z\s]{1,50}"
                         title="Only letters and spaces allowed"
                         required
                     >
+
                 </div>
 
 
-                <div class="contact-field">
-                    <label for="email">Email</label>
+                <div class="contact-page-field">
+
+                    <label for="contact-email">Email</label>
 
                     <input
                         type="email"
                         name="email"
-                        id="email"
+                        id="contact-email"
                         required
                     >
+
                 </div>
 
 
-                <div class="contact-field">
-                    <label for="phone">Phone No</label>
+                <div class="contact-page-field">
+
+                    <label for="contact-phone">Phone No</label>
 
                     <input
                         type="tel"
                         name="phone"
-                        id="phone"
+                        id="contact-phone"
                         pattern="[0-9]{10}"
                         required
                     >
+
                 </div>
 
 
-                <div class="contact-field">
-                    <label for="msg">Message</label>
+                <div class="contact-page-field">
+
+                    <label for="contact-message">Message</label>
 
                     <textarea
                         name="message"
-                        id="msg"
+                        id="contact-message"
                         rows="3"
                         required
                     ></textarea>
+
                 </div>
 
 
-                <button type="submit" class="contact-submit">
+                <button type="submit" class="contact-page-button">
                     Send Message
                 </button>
 
