@@ -1,4 +1,4 @@
-```css
+css
 /* =========================
    GENERAL PAGE
    ========================= */
@@ -1338,12 +1338,12 @@ body {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    padding: 28px 25px 35px;
+    padding: 25px 20px 30px;
 }
 
 
 /* =========================
-   HEADER
+   PAGE HEADER
    ========================= */
 
 .certification-header {
@@ -1353,37 +1353,25 @@ body {
 
 .certification-label {
     color: #4fffb0;
-
     font-size: 12px;
-
     font-weight: 600;
-
     letter-spacing: 2px;
-
     text-transform: uppercase;
-
     margin: 0 0 5px;
 }
 
 .certification-header h1 {
     color: #ffffff;
-
     font-size: 30px;
-
     font-weight: 700;
-
     margin: 0 0 8px;
 }
 
 .certification-intro {
     color: #aeb5bd;
-
     font-size: 14px;
-
-    line-height: 1.6;
-
+    line-height: 1.5;
     margin: 0 auto;
-
     max-width: 600px;
 }
 
@@ -1394,9 +1382,7 @@ body {
 
 .certification-list {
     display: flex;
-
     flex-direction: column;
-
     gap: 15px;
 }
 
@@ -1405,12 +1391,10 @@ body {
    CERTIFICATION CARD
    ========================= */
 
-.certification-card {
+.certification-item {
     display: flex;
-
     align-items: center;
-
-    gap: 20px;
+    justify-content: space-between;
 
     background-color: #1c1f24;
 
@@ -1422,67 +1406,63 @@ body {
 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.certification-card:hover {
+.certification-item:hover {
     border-color: #4fffb0;
-
     transform: translateY(-2px);
-
-    box-shadow: 0 6px 20px rgba(79, 255, 176, 0.08);
 }
 
 
 /* =========================
-   ICON
+   CERTIFICATION CONTENT
    ========================= */
 
-.certification-icon {
-    width: 55px;
-
-    height: 55px;
-
-    flex-shrink: 0;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    background-color: #252a30;
-
-    border: 1px solid #3a4149;
-
-    border-radius: 10px;
-
-    font-size: 27px;
+.certification-content {
+    flex: 1;
 }
-
-
-/* =========================
-   CONTENT
-   ========================= */
 
 .certification-content h2 {
     color: #ffffff;
-
-    font-size: 20px;
-
+    font-size: 21px;
     font-weight: 700;
-
-    margin: 0 0 6px;
+    margin: 0 0 7px;
 }
 
 .certification-content p {
     color: #d0d5da;
-
     font-size: 13px;
-
     line-height: 1.6;
-
     margin: 0;
+    max-width: 650px;
+}
+
+
+/* =========================
+   CERTIFICATION BADGE
+   ========================= */
+
+.certification-badge {
+    flex-shrink: 0;
+
+    margin-left: 25px;
+
+    min-width: 75px;
+
+    padding: 7px 12px;
+
+    text-align: center;
+
+    border: 1px solid #4fffb0;
+
+    border-radius: 20px;
+
+    color: #4fffb0;
+
+    font-size: 11px;
+
+    font-weight: 600;
 }
 
 
@@ -1493,7 +1473,7 @@ body {
 @media (max-width: 768px) {
 
     .certification-container {
-        padding: 22px 15px 30px;
+        padding: 20px 15px 25px;
     }
 
     .certification-header {
@@ -1501,39 +1481,38 @@ body {
     }
 
     .certification-header h1 {
-        font-size: 27px;
+        font-size: 26px;
     }
 
     .certification-intro {
         font-size: 13px;
     }
 
-    .certification-card {
-        gap: 14px;
-
-        padding: 16px;
+    .certification-list {
+        gap: 12px;
     }
 
-    .certification-icon {
-        width: 45px;
-
-        height: 45px;
-
-        font-size: 22px;
+    .certification-item {
+        padding: 16px;
+        align-items: flex-start;
     }
 
     .certification-content h2 {
-        font-size: 18px;
+        font-size: 19px;
     }
 
     .certification-content p {
         font-size: 12px;
+        line-height: 1.55;
+    }
 
-        line-height: 1.5;
+    .certification-badge {
+        margin-left: 12px;
+        min-width: 60px;
+        padding: 6px 8px;
+        font-size: 10px;
     }
 }
-
-
 
 
 
